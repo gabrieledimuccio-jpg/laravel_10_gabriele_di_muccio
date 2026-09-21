@@ -260,12 +260,28 @@ p, div, row {
     border-radius: 5px;
     padding: 30px;
     margin-top: 75px;
-    width: 55%;
+    width:55%;
 }
 .bar-custom{
     height: 50px;
 }
 /* FINE PAGINA REGISTRATI */
+
+
+/* INIZIO PAGINA LOGIN */
+.bg-custom2{
+    background-color: #F9F6F0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), 
+    url(../../public/media/nils-leonhardt-Tss1uOMczDg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    flex: 1 0 auto; 
+    color: whitesmoke;
+    padding-top: 15px; 
+    padding-bottom: 40px;
+}
+/* FINE PAGINA LOGIN */
 
 
 
