@@ -1,0 +1,271 @@
+/* INIZIO LAYOUT */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%; 
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.body-custom{
+    background-color: #F9F6F0;
+    background-image: url(../../public/media/javier-allegue-barros-C7B-ExXpOIE-unsplash.jpg);
+    background-size: cover;
+}
+.top-bar{
+    font-size: 23px;
+    font-family: 'Playfair-Display-SC';
+    color: #FFFFFF;
+    background-color: #5b738c ;
+    height: 8vh;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+.div1{
+    height: 85vh;
+}
+/* FINE LAYOUT */
+
+/* INIZIO NAVBAR */
+.nav-custom{
+    height: 80px;
+    width: 100%;
+    font-family: 'Playfair-Display-SC';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: transparent;
+    
+}
+.link-custom{
+    font-weight:300 !important;
+    font-size: 17px;
+    color: #FFFFFF;
+    position: relative;
+    text-decoration: none;
+    padding: 5px 0;
+    transition: 0.3s;
+    margin-left: 70px;
+}
+
+.link-custom:hover {
+    color:#FFFFFF;
+    transform: scale(1.2);
+    
+}
+.link-custom::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    transform-origin: bottom right;
+    transition: transform 0.15s ease-out;
+}
+.link-custom:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+/* FINE NAVBAR */
+/* LOGO */
+.i{
+    color: #FFFFFF;
+    font-size: 40px;
+} 
+/* FINE LOGO */
+.bar{
+    color: #FFFFFF;
+}
+/* INIZIO FOOTER */
+.footer-custom{
+    margin-top: auto;
+    width: 100%;
+    height: 100px;     
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(25, 35, 45, 0.45); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2); 
+    margin-top: auto;
+    flex-shrink: 0;
+}
+/* FINE FOOTER */
+
+/* INIZIO PAGINA HOME */
+.title-custom{
+    font-family: 'Playfair-Display-SC';
+    font-size: 65px;
+    font-weight: 900;
+    word-spacing: -5px;
+}
+.title2-custom{
+    font-family: 'Agbalumo';
+    font-size: 60px;
+    color: yellowgreen;
+    letter-spacing: 2px;
+}
+.btn-custom{
+    font-size: larger;
+    border: 1.5px solid yellowgreen;
+    border-radius: 55px;
+}
+.btn-custom:hover{
+    background-color: yellowgreen;
+    border: 1.5px solid whitesmoke;
+    
+}
+.bg-credits{
+    position: absolute;
+    bottom: 85px; 
+    right: 5px;
+    transform: rotate(90deg);
+    transform-origin: top right;
+    white-space: nowrap; 
+    color: #ffffff; 
+    padding: 2px 5px;
+    font-size: 11px;
+    font-family: sans-serif;
+    border-radius: 4px;
+    z-index: 2100
+}
+
+.bg-credits a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.bg-credits a:hover {
+    opacity: 0.8;
+}
+.bg-credits-2{
+    position: absolute;
+    bottom: 250px; 
+    left: 2px;
+    transform: rotate(-90deg); 
+    transform-origin: top left;
+    white-space: nowrap; 
+    color: #ffffff; 
+    padding: 2px 5px;
+    font-size: 11px;
+    font-family: sans-serif;
+    border-radius: 4px;
+    z-index: 99
+}
+.bg-credits-2 a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.bg-credits-2 a:hover {
+    opacity: 0.8;
+}
+
+/* FINE PAGINA HOME */
+
+
+/* INIZIO PAGINA CHI SIAMO */
+.row-custom{
+    height: 60vh;
+}
+.row-custom2{
+    height: 80vh;
+}
+.row-custom3{
+    height: 90vh;
+}
+.bg-1{
+    background-color: #7998B1;
+    font-family: 'Playfair-Display-SC';
+    font-size: 30px;
+}
+.bg-2{
+    position: relative;
+    background-image: url(../../public/media/annie-spratt-hrqMHFKC6g8-unsplash\ \(1\).jpg);
+    background-size: cover;
+}
+.bg-3{
+    background-color: #c7b6a6;
+}
+.h2-custom{
+    font-family: 'bangers';
+    position: absolute;
+    font-size: 60px;
+    bottom: 120px; 
+    right: -75px;
+    transform: rotate(270deg);
+    transform-origin: bottom left;
+}
+.bg-4{
+    background-color: #EA7F6A;
+}
+.p-custom{
+    text-align: justify;
+}
+.bg-5{
+    position: relative;
+    object-position: center;
+    background-size: cover;
+    background-image: url(../../public/media/reinhart-julian-WxM465oM4j4-unsplash.jpg);
+}
+.bg-6{
+    background-color: #BBA45B;
+}
+p, div, row {
+    margin-bottom: 0;
+}
+/* FINE PAGINA CHI SIAMO */
+
+/* IINIZIO PAGINA REGISTRATI */
+.bg-custom{
+    background-color: #F9F6F0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), 
+    url(../../public/media/chris-meads-Uy9Bh-kmt3s-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    flex: 1 0 auto; 
+    color: whitesmoke;
+    padding-top: 15px; 
+    padding-bottom: 40px;
+}
+
+.btn-custom2{
+    border: 1.5px solid yellowgreen;
+    background-color: yellowgreen;
+    width: 65%;
+}
+.btn-custom2:hover{
+    background-color: yellowgreen;
+    border: 1.5px solid whitesmoke; 
+}
+
+.form-custom{
+    background-color: rgba(25, 35, 45, 0.45); 
+    backdrop-filter: blur(8px);              
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.15); 
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 75px;
+    width: 55%;
+}
+.bar-custom{
+    height: 50px;
+}
+/* FINE PAGINA REGISTRATI */
+
+
+
