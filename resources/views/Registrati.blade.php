@@ -10,10 +10,10 @@
             <div class="col-12 col-md-6 mt-5">
                 <h1 class="title-custom ms-5">INIZIA IL TUO PERCORSO CON NOI</h1>
                 <p class="fs-5 ms-5"> Animi at expedita cumque exercitationem a ea perferendis saepe fuga autem nisi, laborum quod nobis ab reprehenderit recusandae quae? Laborum, assumenda culpa?</p>
-                <div class="bg-credits">Foto di <a href="https://unsplash.com/it/@cjmeads?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Chris Meads</a> su <a href="https://unsplash.com/it/foto/fotografia-di-paesaggio-di-riva-del-mare-Uy9Bh-kmt3s?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>
+                
                 <div class="mt-5 d-flex align-items-center">
                     <div class="border-start border-white ms-5 bar-custom"></div>
-
+                    
                     <i class="fa-regular fa-calendar-days i ms-5 me-3"></i> 
                     <div class="d-flex flex-column me-5">
                         <span class="fs-6 fw-bold text-white">1 OTTOBRE</span>

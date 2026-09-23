@@ -9,7 +9,7 @@
             <div class="col-12 mt-5 mb-3 d-flex justify-content-center">
                 @csrf
                 <form class="form-custom p-3 w-25">
-                    <h2 class="text-center mt-3">
+                    <h2 class="text-center mt-3 mb-4">
                         LOGIN
                     </h2>
                     <div class="mb-3">
