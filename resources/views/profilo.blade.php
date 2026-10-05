@@ -3,8 +3,9 @@
         document.body.classList.remove('body-custom');
         document.body.classList.add('profilo-custom');
     </script>
-    <div class="container-fluid pt-5 mt-2">
-        <div class="row mt-5 ms-5 justify-content-center align-items-center">
+    <div class="container-fluid pt-5 mt-2 d-flex justify-content-center align-items-center">
+        <div class="bg-credits">Foto di <a href="https://unsplash.com/it/@plufow?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Plufow Le Studio</a> su <a href="https://unsplash.com/it/foto/unimmagine-sfocata-di-uno-sfondo-blu-e-rosa-VXXvmc7wQjY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>
+        <div class="row mt-5 box-profilo">
             <div class="col-12 text-center mt-5">
                 <i class="fa-regular fa-circle-user icon"></i>
             </div>
@@ -12,7 +13,7 @@
                 <span class="mt-5 mb-3">NOME</span> 
                 <span class="mt-5 mb-3">EMAIL</span> 
             </div>
-            <div class="col-12 col-md-6 d-flex align-items-center flex-column div2-custom">
+            <div class="col-12 col-md-6 d-flex align-items-center flex-column">
                 @auth
                 <span class="mt-5 mb-3">{{ Auth::user()->name }}</span> 
                 <span class="mt-5 mb-3">{{ Auth::user()->email }}</span> 

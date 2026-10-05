@@ -285,17 +285,19 @@ p, div, row {
 
 /* INIZIO PAGINA PROFILO */
 .profilo-custom{
-    background-color: #F9F6F0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4));
-    flex: 1 0 auto; 
-    color: whitesmoke;
+    background-image: url(../../public/media/plufow-le-studio-VXXvmc7wQjY-unsplash.jpg);
+    background-size: cover;
     padding-top: 15px; 
     padding-bottom: 40px;
 }
 .icon{
     font-size: 150px;
 }
-.div2-custom{
-    margin-top: 15px;
+
+.box-profilo{
+    border: solid 2px black;
+    border-radius: 25px;
+    width: 50%;
+    margin-bottom: 30px;
 }
 /* FINE PAGINA PROFILO */

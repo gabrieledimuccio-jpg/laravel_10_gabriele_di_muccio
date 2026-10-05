@@ -34,20 +34,40 @@
                     @csrf
                     <div class="mb-3">
                         <label for="name" class="form-label">Nome</label>
-                        <input name="name" type="text" class="form-control" id="name">
+                        <input name="name" type="text" class="form-control" id="name" value="{{ old('name') }}">
+                        @error('name')
+                        <div class="alert alert-danger mt-2 py-2 px-3 bootstrap-aler">
+                            {{ $message }}
+                        </div>
+                        @enderror
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
-                        <input name="email" type="email" class="form-control" id="email">
+                        <input name="email" type="email" class="form-control" id="email" value="{{ old('email') }}">
+                        @error('email')
+                        <div class="alert alert-danger mt-2 py-2 px-3 bootstrap-aler">
+                            {{ $message }}
+                        </div>
+                        @enderror
                     </div>
                     <div class="mb-3">
                         <label for="password" class="form-label">Password</label>
                         <input name="password" type="password" class="form-control" id="password">
                         <small class="text-white-50">La password deve contenere almeno 8 caratteri.</small>
+                        @error('password')
+                        <div class="alert alert-danger mt-2 py-2 px-3 bootstrap-aler">
+                            {{ $message }}
+                        </div>
+                        @enderror
                     </div>
                     <div class="mb-3">
                         <label for="password_confirmation" class="form-label"> Conferma Password</label>
                         <input name="password_confirmation" type="password" class="form-control" id="password_confirmation">
+                        @error('password')
+                        <div class="alert alert-danger mt-2 py-2 px-3 bootstrap-aler">
+                            {{ $message }}
+                        </div>
+                        @enderror
                     </div>
                     <div class="d-flex justify-content-center mt-4">
                         <button type="submit" class="btn text-white btn-custom2 p-2">ISCRIVITI ADESSO</button>

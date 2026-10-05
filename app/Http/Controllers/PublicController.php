@@ -21,7 +21,4 @@ return view('register');
 function login(){
 return view('login');
 }
-// public function store(Request $request){
-
-// }
 }
