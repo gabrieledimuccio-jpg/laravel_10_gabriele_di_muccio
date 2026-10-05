@@ -1,4 +1,4 @@
-<x-layout2>
+<x-layout2 title="Registrati">
     <script>
         document.body.classList.remove('body-custom');
         document.body.classList.add('bg-custom');
@@ -30,23 +30,24 @@
                 
             </div>
             <div class="col-12 col-md-6 d-flex justify-content-center">
-                @csrf
-                <form class="form-custom p-3">
+                <form class="form-custom p-3" action="{{ route('register') }}" method="POST">
+                    @csrf
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <label for="name" class="form-label">Nome</label>
+                        <input name="name" type="text" class="form-control" id="name">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Nome</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <label for="email" class="form-label">Email</label>
+                        <input name="email" type="email" class="form-control" id="email">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <label for="password" class="form-label">Password</label>
+                        <input name="password" type="password" class="form-control" id="password">
+                        <small class="text-white-50">La password deve contenere almeno 8 caratteri.</small>
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label"> Conferma Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <label for="password_confirmation" class="form-label"> Conferma Password</label>
+                        <input name="password_confirmation" type="password" class="form-control" id="password_confirmation">
                     </div>
                     <div class="d-flex justify-content-center mt-4">
                         <button type="submit" class="btn text-white btn-custom2 p-2">ISCRIVITI ADESSO</button>

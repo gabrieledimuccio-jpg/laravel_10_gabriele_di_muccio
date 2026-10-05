@@ -283,5 +283,19 @@ p, div, row {
 }
 /* FINE PAGINA LOGIN */
 
-
-
+/* INIZIO PAGINA PROFILO */
+.profilo-custom{
+    background-color: #F9F6F0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4));
+    flex: 1 0 auto; 
+    color: whitesmoke;
+    padding-top: 15px; 
+    padding-bottom: 40px;
+}
+.icon{
+    font-size: 150px;
+}
+.div2-custom{
+    margin-top: 15px;
+}
+/* FINE PAGINA PROFILO */
