@@ -1,9 +1,4 @@
 <x-layout2 title="Registrati">
-    <script>
-        document.body.classList.remove('body-custom');
-        document.body.classList.add('bg-custom');
-    </script>
-    
     
     <div class="container-fluid bg-custom pt-5 mt-2">
         <div class="row align-items-center justify-content-start">
@@ -76,8 +71,10 @@
             </div>
         </div>
     </div>
-    
-    
-    
+
+    <script>
+        document.body.classList.remove('body-custom');
+        document.body.classList.add('bg-custom');
+    </script>
     
 </x-layout2>

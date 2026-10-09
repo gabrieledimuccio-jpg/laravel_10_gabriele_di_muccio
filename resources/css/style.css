@@ -47,13 +47,13 @@ body {
     
 }
 .link-custom{
+    transition: 0.3s;
     font-weight:300 !important;
     font-size: 17px;
     color: #FFFFFF;
     position: relative;
     text-decoration: none;
     padding: 5px 0;
-    transition: 0.3s;
     margin-left: 70px;
 }
 
@@ -301,3 +301,147 @@ p, div, row {
     margin-bottom: 30px;
 }
 /* FINE PAGINA PROFILO */
+
+/* INIZIO PAGINA MY GALLERY */
+.my-gallery-custom {
+    background-image: url(../../public/media/joe-woods-4Zaq5xY5M_c-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.title3-custom{
+    font-family: 'Playfair-Display-SC';
+    font-size: 50px;
+}
+
+.expandable-btn-container {
+    background-color: burlywood !important; 
+    border: 1.5px solid white !important;
+    border-radius: 55px; 
+    width: 100%;
+    max-width: 550px;
+    overflow: hidden !important; 
+    transition: max-height 0.7s cubic-bezier(0.4, 0, 0.2, 1), border-radius 0.7s ease, background-color 0.7s ease;
+    min-height: 54px !important;
+    max-height: 54px !important; 
+    transition: 0.5s;
+}
+.expandable-btn-container:hover{
+    transform: scale(1.05);
+
+}
+.btn-custom3 {
+    font-size: medium;
+    background-color: transparent !important; 
+    color: white !important;
+    border: none !important;
+    height: 52px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: none !important;
+}
+
+
+.expandable-form {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.7s ease, transform 0.7s ease, visibility 0.7s;
+    background-color: burlywood !important; 
+}
+
+.expandable-btn-container.is-expanded {
+    border-radius: 20px !important; 
+    min-height: 54px !important;
+    max-height: 500px !important; 
+}
+
+.expandable-btn-container.is-expanded .expandable-form {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0);
+}
+
+.icon-rotate {
+    transition: transform 0.3s ease;
+}
+.icon-rotate.rotated {
+    transform: rotate(135deg);
+}
+.expandable-form .form-label {
+    color: white !important;
+    font-weight: 500;
+}
+
+.polaroid-card {
+    background: #ffffff;
+    padding: 15px 15px 25px 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    border-radius: 2px;
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 280px;
+}
+
+.polaroid-card:hover {
+    transform: scale(1.03) rotate(1deg);
+}
+
+.polaroid-img-container {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    border: 1px solid #e0e0e0;
+}
+
+.polaroid-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.polaroid-caption {
+    font-family: 'Georgia', serif; 
+}
+
+.polaroid-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.polaroid-location {
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+.polaroid-date {
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+}
+
+.polaroid-card-large {
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2) !important;
+}
+
+.polaroid-img-container-large {
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+}
+
+.polaroid-img-container-large img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}
+/* FINE PAGINA MY  GALLERY */

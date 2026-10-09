@@ -1,3 +1,4 @@
+@props(['navColor' => 'text-white'])
 <!doctype html>
 <html lang="en">
 <head>
@@ -7,8 +8,8 @@
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="body-custom">
+<x-navbar :link-color="$navColor" />
 
-<x-navbar></x-navbar>
 {{ $slot }}
 <x-footer></x-footer>
 

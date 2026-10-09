@@ -1,8 +1,5 @@
 <x-layout2 title="Login">
-    <script>
-        document.body.classList.remove('body-custom');
-        document.body.classList.add('bg-custom2');
-    </script>
+    
     <div class="container-fluid bg-custom2">
         <div class="bg-credits">Foto di <a href="https://unsplash.com/it/@ambasteir?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nils Leonhardt</a> su <a href="https://unsplash.com/it/foto/alberi-verdi-accanto-al-fiume-durante-il-giorno-Tss1uOMczDg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>
         <div class="row">
@@ -13,15 +10,15 @@
                         LOGIN
                     </h2>
                     @if ($errors->any())
-    <div class="alert alert-danger py-2">
-        <ul class="m-0">
-            @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-    </div>
-@endif
-
+                    <div class="alert alert-danger py-2">
+                        <ul class="m-0">
+                            @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                    @endif
+                    
                     <div class="mb-3">
                         <label for="name" class="form-label">Nome</label>
                         <input name="name" type="text" class="form-control" id="name">
@@ -44,9 +41,9 @@
         </div>
     </div>
     
-    
-    
-    
-    
+    <script>
+        document.body.classList.remove('body-custom');
+        document.body.classList.add('bg-custom2');
+    </script>
     
 </x-layout2>
